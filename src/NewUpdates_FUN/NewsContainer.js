@@ -30,8 +30,7 @@ const NewsContainer = (props) => {
         props.setProgress(60) 
         let parseData = await response.json();
        
-        console.log(URL)
-        console.log(parseData)
+        
         
         setState({ articles: parseData.articles, totalResults: parseData.totalResults, loading: false, pages: 1});
         props.setProgress(100) 
@@ -72,11 +71,10 @@ const NewsContainer = (props) => {
             }
             
         );
-        console.log("Article Length", state.articles.length)
-        console.log("Total Result", state.totalResults)
+        
     }   
 
-        console.log('render')
+        
         return (
             <div className='container my-4 text-center'>
                

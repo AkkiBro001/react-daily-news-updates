@@ -42,7 +42,7 @@ export default class NewsContainer extends Component {
         //!Here we set the title of browser as category
         //!Note : in constructor we used this.props so we need tos props in constructor & super
         document.title = `${this.capitalize(this.props.category)} - News`;
-        // console.log('constructor')
+        
     }
 
 
@@ -62,10 +62,7 @@ export default class NewsContainer extends Component {
         //!Here we update State uing setState method similer to function component - useState()
         //!IMPNOTE: As menthined above this fucntion invoked immediately after a component is mounted.
         //!         but it below line we update the state so it will call after render then again render all components again.
-        console.log("cdm 2") //!Check console to uderstand process
         
-        console.log(URL)
-        console.log(parseData)
         //!Here we update the state as well as set loading false so loading page not available after data get
         this.setState({ articles: parseData.articles, totalResults: parseData.totalResults, loading: false, pages: 1});
         this.props.setProgress(100) //!And lastly set progess is 100
@@ -104,7 +101,7 @@ export default class NewsContainer extends Component {
 
 
     render() {
-        console.log('render')
+        
         return (
             <div className='container my-4 text-center'>
                 {/* 
