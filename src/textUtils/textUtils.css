@@ -1,0 +1,8 @@
+body{
+    background: #ebeced;
+}
+
+/*for Invert Arrows in dark-mode */
+.accordion-button.invert::after{
+        filter: invert(1);
+}
