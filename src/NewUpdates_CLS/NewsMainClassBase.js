@@ -63,14 +63,14 @@ export default class NewsMain extends Component {
                 />
                 <Navbar/>
                 <Routes>
-                    <Route path="/" element={<NewsContainer setProgress = {this.setProgress} apiKey={this.apiKey} pageSize={this.pageSize} countery='in' category="general" key="Home"/>}/>
-                    <Route path="/general" element={<NewsContainer setProgress = {this.setProgress} apiKey={this.apiKey} pageSize={this.pageSize} countery='in' category="general" key="general"/>}/>
-                    <Route path="/entertainment" element={<NewsContainer setProgress = {this.setProgress} apiKey={this.apiKey} pageSize={this.pageSize} countery='in' category="entertainment" key="entertainment"/>}/>
-                    <Route path="/business" element={<NewsContainer setProgress = {this.setProgress} apiKey={this.apiKey} pageSize={this.pageSize} countery='in' category="business" key="business"/>}/>
-                    <Route path="/health" element={<NewsContainer setProgress = {this.setProgress} apiKey={this.apiKey} pageSize={this.pageSize} countery='in' category="health" key="health"/>}/>
-                    <Route path="/science" element={<NewsContainer setProgress = {this.setProgress} apiKey={this.apiKey} pageSize={this.pageSize} countery='in' category="science" key="science"/>}/>
-                    <Route path="/sports" element={<NewsContainer setProgress = {this.setProgress} apiKey={this.apiKey} pageSize={this.pageSize} countery='in' category="sports" key="sports"/>}/>
-                    <Route path="/technology" element={<NewsContainer setProgress = {this.setProgress} apiKey={this.apiKey} pageSize={this.pageSize} countery='in' category="technology" key="technology"/>}/>
+                    <Route path="/react-daily-news-updates" element={<NewsContainer setProgress = {this.setProgress} apiKey={this.apiKey} pageSize={this.pageSize} countery='in' category="general" key="Home"/>}/>
+                    <Route path="react-daily-news-updates/general" element={<NewsContainer setProgress = {this.setProgress} apiKey={this.apiKey} pageSize={this.pageSize} countery='in' category="general" key="general"/>}/>
+                    <Route path="react-daily-news-updates/entertainment" element={<NewsContainer setProgress = {this.setProgress} apiKey={this.apiKey} pageSize={this.pageSize} countery='in' category="entertainment" key="entertainment"/>}/>
+                    <Route path="react-daily-news-updates/business" element={<NewsContainer setProgress = {this.setProgress} apiKey={this.apiKey} pageSize={this.pageSize} countery='in' category="business" key="business"/>}/>
+                    <Route path="react-daily-news-updates/health" element={<NewsContainer setProgress = {this.setProgress} apiKey={this.apiKey} pageSize={this.pageSize} countery='in' category="health" key="health"/>}/>
+                    <Route path="react-daily-news-updates/science" element={<NewsContainer setProgress = {this.setProgress} apiKey={this.apiKey} pageSize={this.pageSize} countery='in' category="science" key="science"/>}/>
+                    <Route path="react-daily-news-updates/sports" element={<NewsContainer setProgress = {this.setProgress} apiKey={this.apiKey} pageSize={this.pageSize} countery='in' category="sports" key="sports"/>}/>
+                    <Route path="react-daily-news-updates/technology" element={<NewsContainer setProgress = {this.setProgress} apiKey={this.apiKey} pageSize={this.pageSize} countery='in' category="technology" key="technology"/>}/>
                     <Route path="*" element={<NewsContainer setProgress = {this.setProgress} apiKey={this.apiKey} pageSize={this.pageSize} countery='in' category="null" key="all" title="Oops!! Page Not Found"/>}/>
 
                 </Routes>
