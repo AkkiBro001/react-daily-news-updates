@@ -1,0 +1,129 @@
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/**
+ * React Router DOM v6.2.1
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */
+
+/**
+ * React Router v6.2.1
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */
+
+/** @license React v0.20.2
+ * scheduler.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+//!         but it below line we update the state so it will call after render then again render all components again.
+
+//!(Which is mentioned NEWSAPI documentation 'https://newsapi.org/docs/endpoints/everything') 
+
+//!And lastly set progess is 100
+
+//!Check console to uderstand process
+
+//!Else it will send request infinitly. Means run updateNews() function infinitly.
+
+//!Here After fetching response set progess is 10
+
+//!Here In url we set &page=1&pageSize=20 at the end, Means Show 20 articles in 1st page 
+
+//!Here before fetching set progess is 10
+
+//!Here we concat(join) old already loaded articles with new articles which are comming from next page.
+
+//!Here we create capitalize function for set text first letter capital
+
+//!Here we fetch data from url using fetch API 
+
+//!Here we increament the pages so we can get next page when we scrolled
+
+//!Here we just call updatenews function 
+
+//!Here we set loading true so we can show loading page before news coantent.
+
+//!Here we set the title of browser as category
+
+//!Here we update State uing setState method similer to function component - useState()
+
+//!Here we update state
+
+//!Here we update the state as well as set loading false so loading page not available after data get
+
+//!Here we use constructor of class
+
+//!Here we use object deconstructor for props which comes from NewsContainer.js
+
+//!Here we used short circuit if loading is false then run array map method
+
+//!Here we used state to store articles.
+
+//!IMP : Whenever you used constructor "super()"" must be include.
+
+//!IMPNOTE: As menthined above this fucntion invoked immediately after a component is mounted.
+
+//!In this function we set as async, Inside it we fetch the data using fetch API.
+
+//!Note : in constructor we used this.props so we need tos props in constructor & super
+
+//!Note Here, Empty [] array after function is necessary so it's run only when page load.
+
+//!Project 1 : Text Utils ////////////////////////////////////////////////////////////////////////////
+
+//!Project 2 : News Updates (Class Base Components)
+
+//!Project 2 : News Updates (Function Base Components)
+
+//!Project 2 : NewsUpdates (Class Base Project) ///////////////////////////////////////////////////////
+
+//!e.g <NewsItems title={article.title} description={article.description} imgURL={article.urlToImage} newsURL={article.url}/>
+
+//!e.g Science, Business
