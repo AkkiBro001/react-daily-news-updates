@@ -80,8 +80,13 @@ const NewsContainer = (props) => {
         );
         
     }  
-     
-    if(state.articles.length === 0){
+
+    try{
+
+        if(state.articles.length === 0){
+            return <ErrorPage errorHeading="corsNotAllowed" errorMessage="Requests from the browser are not allowed on the Developer plan, except from localhost."/>
+        }
+    }catch(e){
         return <ErrorPage errorHeading="corsNotAllowed" errorMessage="Requests from the browser are not allowed on the Developer plan, except from localhost."/>
     }
         

@@ -2,7 +2,7 @@
 
 import NewsMainClassBase from "./NewUpdates_CLS/NewsMainClassBase"; //!Project 1: News Updates (Class Base Components)
 import NewsMainFunctionBase from "./NewUpdates_FUN/NewsMainFunctionBase"; //!Project 2: News Updates (Function Base Components)
-import ErrorPage from "./ErrorPage";
+
 
 function App(){
   
