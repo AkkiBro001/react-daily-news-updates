@@ -4,6 +4,7 @@ import LoadingPage from './LoadingPage'
 import PropTypes from 'prop-types'
 
 import InfiniteScroll from 'react-infinite-scroll-component';
+import ErrorPage from '../ErrorPage';
 
 const NewsContainer = (props) => {
 
@@ -73,7 +74,11 @@ const NewsContainer = (props) => {
         );
         
     }   
-
+        try{
+            console.log(state.articles.length)
+        }catch(e){
+            return <ErrorPage errorHeading={e.code} errorMessage={e.errorMessage}/>
+        }
         
         return (
             <div className='container my-4 text-center'>
