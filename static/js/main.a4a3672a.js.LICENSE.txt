@@ -68,8 +68,6 @@ object-assign
 
 //!And lastly set progess is 100
 
-//!Check console to uderstand process
-
 //!Else it will send request infinitly. Means run updateNews() function infinitly.
 
 //!Here After fetching response set progess is 10
