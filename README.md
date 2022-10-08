@@ -1,3 +1,4 @@
-# In this project code contains 2 projects
-1. TextUtils
-2. Daily News Updates [Class Base and Component Base]
+# Daily News Updates [Class Base and Component Base]
+Features :  1.react-infinite-scroll-component 
+            2.react-top-loading-bar
+            3.react-router-dom
