@@ -12,7 +12,7 @@ function App(){
   //!Project 2 : NewsUpdates (Function Base Project) ///////////////////////////////////////////////////////
   return <NewsMainFunctionBase /> //*Here we convert class base component to function base component
   }catch(e){
-    
+    alert(e.message)
     return <ErrorPage errorHeading={e.code} errorMessage={e.message}/>
   }
 }
