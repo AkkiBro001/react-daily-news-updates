@@ -114,13 +114,13 @@ object-assign
 
 //!Note Here, Empty [] array after function is necessary so it's run only when page load.
 
-//!Project 1 : Text Utils ////////////////////////////////////////////////////////////////////////////
+//!Project 1 : NewsUpdates (Class Base Project) ///////////////////////////////////////////////////////
 
-//!Project 2 : News Updates (Class Base Components)
+//!Project 1: News Updates (Class Base Components)
 
-//!Project 2 : News Updates (Function Base Components)
+//!Project 2 : NewsUpdates (Function Base Project) ///////////////////////////////////////////////////////
 
-//!Project 2 : NewsUpdates (Class Base Project) ///////////////////////////////////////////////////////
+//!Project 2: News Updates (Function Base Components)
 
 //!e.g <NewsItems title={article.title} description={article.description} imgURL={article.urlToImage} newsURL={article.url}/>
 
