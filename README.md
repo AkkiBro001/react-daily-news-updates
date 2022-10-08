@@ -5,4 +5,4 @@ Features :  1.react-infinite-scroll-component
 
 # This app is not working for development because "corsNotAllowed"
 # Requests from the browser are not allowed on the Developer plan, except from localhost.
-# on localhost it's run fine.
+# on localhost it's run fine
