@@ -25,16 +25,22 @@ const NewsContainer = (props) => {
                 loading: true
             }
         })
-        props.setProgress(10) 
-        let URL = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${state.pages}&pageSize=${props.pageSize}`;
-        let response = await fetch(URL);
-        props.setProgress(60) 
-        let parseData = await response.json();
+
+        
+
+            props.setProgress(10) 
+            let URL = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${state.pages}&pageSize=${props.pageSize}`;
+            let response = await fetch(URL);
+            props.setProgress(60) 
+            let parseData = await response.json();
+        
        
         
         
         setState({ articles: parseData.articles, totalResults: parseData.totalResults, loading: false, pages: 1});
         props.setProgress(100) 
+
+        
     }
 
     //!Note Here, Empty [] array after function is necessary so it's run only when page load.
@@ -73,12 +79,11 @@ const NewsContainer = (props) => {
             
         );
         
-    }   
-        try{
-            console.log(state.articles.length)
-        }catch(e){
-            return <ErrorPage errorHeading={e.code} errorMessage={e.errorMessage}/>
-        }
+    }  
+     
+    if(state.articles.length === 0){
+        return <ErrorPage errorHeading="corsNotAllowed" errorMessage="Requests from the browser are not allowed on the Developer plan, except from localhost."/>
+    }
         
         return (
             <div className='container my-4 text-center'>
